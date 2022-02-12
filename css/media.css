@@ -1,0 +1,363 @@
+@media (max-width: 1440px){}
+@media (max-width: 1320px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1290px){}
+@media (max-width: 1170px){}
+@media (max-width: 1140px){}
+@media (max-width: 1024px){}
+@media (max-width: 992px){}
+@media (max-width: 850px){
+
+    .header__product-name {
+        font-size: 68px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .view-btn {
+        max-width: 185px;
+    }
+
+    .nav__hamburger {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        overflow-y: scroll;
+    }
+
+    .nav-line {
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: relative;
+        transition: .4s;
+    }
+
+    .nav-line::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: -10px;
+        transition: .4s;
+    }
+
+    .nav-line::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 10px;
+        transition: .4s;
+    }
+
+    .main__nav-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        row-gap: 15px;
+        transition: .4s;
+        transform: scale(0);
+        z-index: -1;
+    }
+
+    .main__nav-link {
+        width: 94px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__hamburger:hover ~ .main__nav-list {
+        transform:  scale(1);
+    }
+
+    .nav__hamburger:hover .nav-line{
+        background: transparent;
+    }
+    .nav__hamburger:hover .nav-line::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .nav__hamburger:hover .nav-line::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px){
+
+    header {
+        height: 650px;
+    }
+
+    .header__product-name {
+        font-size: 60px;
+    }
+
+    .header__product-price {
+        max-width: 215px;
+        font-size: 38px;
+    }
+
+    footer {
+        padding-bottom: 55px;
+    }
+
+    .footer-container {
+        row-gap: 50px;
+    }
+
+    .main-banner-title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 736px){}
+@media (max-width: 734px){}
+@media (max-width: 684px){
+    .header__product-name {
+        font-size: 50px;
+    }
+
+    .meat-composition {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 667px){
+    .grid {
+        gap: 20px;
+    }
+
+    .product {
+        max-height: 485px;
+    }
+}
+
+@media (max-width: 576px){
+    .grid {
+        padding: 0 80px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .header__product-inside {
+        font-size: 15px;
+    }
+
+    .header__product-price {
+        max-width: 160px;
+        font-size: 25px;
+    }
+
+    .view-btn {
+        max-width: 135px;
+    }
+
+    .map-title {
+        font-size: 38px;
+        padding: 10px 0;
+    }
+
+    .about-us-text {
+        -webkit-line-clamp: 30;
+    }
+}
+@media (max-width: 480px){
+
+    .logo {
+        width: 150px;
+        font-size: 24px;
+        height: 40px;
+    }
+
+    header {
+        height: 530px;
+    }
+
+    .header__product-name {
+        font-size: 40px;
+    }
+
+    .grid {
+        padding: 0 50px;
+    }
+
+    .tel-num {
+        font-size: 16px;
+    }
+
+    .map-title {
+        font-size: 32px;
+    }
+
+    footer {
+        padding-bottom: 35px;
+    }
+
+    .footer-container {
+        row-gap: 35px;
+    }
+
+    .support__nav-list {
+        column-gap: 13px;
+    }
+
+    .support__nav-link {
+        font-size: 14px;
+    }
+
+    .about-us-text {
+        -webkit-line-clamp: 25;
+    }
+
+    .main-banner-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 414px){
+
+    .grid {
+        padding: 0 25px;
+    }
+
+    .header__product-name {
+        font-size: 32px;
+    }
+
+    .meat-composition {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .support__nav-list {
+        column-gap: 7px;
+    }
+
+    .support__nav-link {
+        font-size: 13px;
+    }
+
+    .about-us-text {
+        -webkit-line-clamp: 25;
+    }
+
+    .main-banner-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 412px){}
+@media (max-width: 375px){
+    .support__nav-link {
+        font-size: 12px;
+    }
+
+    .grid {
+        padding: 0 10px;
+    }
+
+    .footer__nav-bottom {
+        width: 185px;
+    }
+
+    .footer__nav-bottom a {
+        font-size: 16px;
+    }
+
+    .products-link {
+        font-size: 15px;
+    }
+
+    .main-banner-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 360px){
+
+    .support__nav-link {
+        font-size: 11px;
+    }
+
+    .products-link {
+        font-size: 14px;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px){
+    .support__nav-link {
+        font-size: 10px;
+    }
+
+    .products-link {
+        font-size: 12px;
+    }
+
+    .header__product-price {
+        max-width: 120px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+
+    .header__product-name {
+        font-size: 26px;
+    }
+
+    .header__product-inside {
+        line-height: 21px;
+    }
+
+    .support-title {
+        font-size: 12px;
+    }
+
+    .view-btn {
+        max-width: 120px;
+        padding: 10px 0;
+    }
+
+    .product-comment {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .tel-num {
+        font-size: 10px;
+    }
+
+    .main-banner-title {
+        font-size: 30px;
+    }
+
+    .about-us-text {
+        font-size: 14px;
+    }
+}
